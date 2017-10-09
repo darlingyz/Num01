@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script src="jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	
+		$.ajax({
+			type:"get",
+			url:"http://localhost:8000",
+			async:true,
+			success:function(preUsers){
+				var data1=JSON.parse(preUsers);		
+				console.log(data1)
+			}
+		});
+		
+	</script>
+</html>
